@@ -11,7 +11,7 @@
     <!-- in file style sheet -->
     <link rel="stylesheet" href="main.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     
   </head>
   <body>
@@ -69,11 +69,106 @@
       </div>
 
 
+      <!-- <div class="column" >
+          <p style="text-align: center;margin-top:64px;" id="clock-in" onclick="clockInOut()"><button class="btn btn-primary">Clock In<i class="far fa-clock" style="margin-left:5px"></i></button></p>
+          <p style="text-align: center;margin-top:64px;display:none" id="clock-out" onclick="clockInOut()"><button class="btn btn-primary">Clock Out<i class="far fa-clock" style="margin-left:5px"></i></button></p>
+          <p id="clocked-in-at"; style="display:none;text-align:center;color:#777777;font-weight:400;font-size:20px"></p>
+      </div>
+      <div class="column" style="margin:0 auto">
+          <p style="text-align: center;margin-top:64px;"><button class="btn btn-primary">Expand Calendar<i class="far fa-calendar-alt" style="margin-left:5px"></i></button></p>
+      </div>
+
+      <script>
+        var clockedIn=false;
+        var timeIn;
+        function clockInOut() {
+          if (clockedIn) {
+            document.getElementById("clock-in").style.display = "block";
+            document.getElementById("clock-out").style.display = "none";
+            document.getElementById("clocked-in-at").style.display = "none";
+          }
+          else {
+            document.getElementById("clock-in").style.display = "none";
+            document.getElementById("clock-out").style.display = "block";
+            document.getElementById("clocked-in-at").style.display = "block";
+            timeIn = new Date();
+            var hour = timeIn.getHours();
+            var ampm = "AM";
+            if (hour > 12) {
+              hour -= 12;
+              ampm = "PM";
+            }
+            else if (hour == 0) {
+              hour = 12;
+            }
+
+            document.getElementById("clocked-in-at").innerHTML="Clocked in at " + hour + ":" + timeIn.getMinutes() + " " + ampm;
+          }
+          clockedIn = !clockedIn;
+        }
+
+      </script> -->
 
 
 
-    
-    
+      <div class="calendar">
+        <table style="width:100%">
+            
+          <tr class="calendar-header">
+            <th>Sunday</th>
+            <th>Monday</th> 
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th> 
+            <th>Friday</th>
+            <th>Saturday</th>
+          </tr>
+          <tr>
+              <td colspan="7"><div class="orange-line"></div></td> 
+          </tr>
+          <tr>
+            <td class="calendar-date">Apr 14</td>
+            <td class="calendar-date">Apr 15</td>
+            <td class="calendar-date">Apr 16</td>
+            <td class="calendar-date">Apr 17</td>
+            <td class="calendar-date calendar-date-current">Apr 18</td>
+            <td class="calendar-date">Apr 19</td>
+            <td class="calendar-date">Apr 20</td>
+          </tr>
+          <tr>
+            <td class="calendar-shift not-scheduled">Not scheduled</td>
+            <td class="calendar-shift">2:00 pm<br>to<br>6:00 pm</td>
+            <td class="calendar-shift not-scheduled">Not scheduled</td>
+            <td class="calendar-shift not-scheduled">Not scheduled</td>
+            <td class="calendar-shift calendar-date-current">8:00 am<br>to<br>12:00 pm</td>
+            <td class="calendar-shift">8:00 am<br>to<br>12:00 pm</td>
+            <td class="calendar-shift">8:00 am<br>to<br>12:00 pm</td>
+          </tr>
+          <tr>
+              <td class="calendar-date">Apr 21</td>
+              <td class="calendar-date">Apr 22</td>
+              <td class="calendar-date">Apr 23</td>
+              <td class="calendar-date">Apr 24</td>
+              <td class="calendar-date">Apr 25</td>
+              <td class="calendar-date">Apr 26</td>
+              <td class="calendar-date">Apr 27</td>
+            </tr>
+            <tr>
+                <td class="calendar-shift"></td>
+              <td class="calendar-shift not-scheduled">Not scheduled</td>
+              <td class="calendar-shift not-scheduled">Not scheduled</td>
+              <td class="calendar-shift"></td>
+              <td class="calendar-shift not-scheduled">Not scheduled</td>
+              <td class="calendar-shift"></td>
+              <td class="calendar-shift not-scheduled">Not scheduled</td>
+            </tr>
+          
+        </table>
+
+      </div>
+
+
+
     </div>
 
     <!-- javascript files-->
