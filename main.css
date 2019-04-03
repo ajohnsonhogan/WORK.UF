@@ -181,10 +181,26 @@ p {
     width: 150px;
     padding-left: 40px;
   }
+
+  .column1-training{
+    width: 100px;
+    padding-left: 30px;
+    text-align: center;
+  }
   
-  .column {
+  .tbl-column {
     width: 150px;
     font-family: "Roboto" !important;
+    text-align: center;
+  }
+
+  .tbl-column-training{
+    width: 120px;
+    font-family: "Roboto" !important;
+    text-align: center;
+  }
+  .tbl-heading {
+    padding-left: 30px;
   }
   
   .table100 th {
@@ -210,6 +226,14 @@ p {
     position: absolute;
     z-index: 1000;
     width: 150px;
+    top: 0;
+    left: 0;
+  }
+  .table100-firstcol-training {
+    background-color: #fff;
+    position: absolute;
+    z-index: 1000;
+    width: 120px;
     top: 0;
     left: 0;
   }
@@ -308,6 +332,7 @@ p {
     width: 100%
 }
 
+<<<<<<< HEAD
 .calendar {
     width: 1120px;
     background: white;
@@ -372,3 +397,37 @@ p {
     color: #888888;
     padding-top: 70px;
 }
+=======
+.training-card {
+  width: 700px;
+  height: 250px;
+  margin-left: 50px;
+}
+
+.button-row{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.training-flex{
+  display:flex;
+  justify-content: space-around;
+}
+
+.training-left{
+  display: table;
+  position: relative;
+  top: 0;
+  left: inherit;
+  height: 100%;
+  width: 800px;
+}
+.training-right{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+>>>>>>> dd47c7ebd687d033e1a961f24cc6b04fabf16570
