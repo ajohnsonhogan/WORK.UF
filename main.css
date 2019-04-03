@@ -184,6 +184,7 @@ p {
   .column1-training{
     width: 100px;
     padding-left: 30px;
+    text-align: center;
   }
   
   .tbl-column {
