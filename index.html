@@ -130,8 +130,13 @@
                         else if (hour == 0) {
                           hour = 12;
                         }
+                        var minutes = timeIn.getMinutes();
+                        if (minutes < 10) {
+                          minutes = "0" + minutes;
+                        }
 
-                        document.getElementById("clocked-in-at").innerHTML="Clocked in at " + hour + ":" + timeIn.getMinutes() + " " + ampm;
+
+                        document.getElementById("clocked-in-at").innerHTML="Clocked in at " + hour + ":" + minutes + " " + ampm;
                       }
                       clockedIn = !clockedIn;
                     }
@@ -141,7 +146,7 @@
 
                 </div>
 
-                <a href="schedule.html" class="card-footer-link">View Calendar</a></a>
+                <a href="schedule.html" class="card-footer-link">View Schedule</a></a>
 
 
             </div>

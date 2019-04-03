@@ -67,16 +67,12 @@
         <a onclick="history.back()" style="cursor:pointer"><i class="fa fa-arrow-circle-left" aria-hidden="true" style="margin-right:5px;"></i>Back</a>
         <div class="title">Schedule</div>
       </div>
-
-
-      <!-- <div class="column" >
-          <p style="text-align: center;margin-top:64px;" id="clock-in" onclick="clockInOut()"><button class="btn btn-primary">Clock In<i class="far fa-clock" style="margin-left:5px"></i></button></p>
-          <p style="text-align: center;margin-top:64px;display:none" id="clock-out" onclick="clockInOut()"><button class="btn btn-primary">Clock Out<i class="far fa-clock" style="margin-left:5px"></i></button></p>
-          <p id="clocked-in-at"; style="display:none;text-align:center;color:#777777;font-weight:400;font-size:20px"></p>
+      <div id="clock-in">
+        <p style="text-align: center;margin-top:35px;" id="clock-in" onclick="clockInOut()"><button class="btn btn-primary">Clock In<i class="far fa-clock" style="margin-left:5px"></i></button></p>
+        <p style="font-size:7px">&nbsp;</p>
       </div>
-      <div class="column" style="margin:0 auto">
-          <p style="text-align: center;margin-top:64px;"><button class="btn btn-primary">Expand Calendar<i class="far fa-calendar-alt" style="margin-left:5px"></i></button></p>
-      </div>
+      <span style="text-align: center;margin-top:35px;display:none;" id="clock-out" onclick="clockInOut()"><button class="btn btn-primary">Clock Out<i class="far fa-clock" style="margin-left:5px"></i></button></span>
+      <span id="clocked-in-at"; style="display:none;text-align:center;color:#777777;font-weight:400;font-size:20px;float:left;width:100%;padding-top:10px"></span>
 
       <script>
         var clockedIn=false;
@@ -107,12 +103,12 @@
           clockedIn = !clockedIn;
         }
 
-      </script> -->
+      </script>
 
 
 
       <div class="calendar">
-        <table style="width:100%">
+        <table style="width:100%; margin-top:-20px">
             
           <tr class="calendar-header">
             <th>Sunday</th>
@@ -145,25 +141,57 @@
             <td class="calendar-shift">8:00 am<br>to<br>12:00 pm</td>
           </tr>
           <tr>
-              <td class="calendar-date">Apr 21</td>
-              <td class="calendar-date">Apr 22</td>
-              <td class="calendar-date">Apr 23</td>
-              <td class="calendar-date">Apr 24</td>
-              <td class="calendar-date">Apr 25</td>
-              <td class="calendar-date">Apr 26</td>
-              <td class="calendar-date">Apr 27</td>
-            </tr>
-            <tr>
-                <td class="calendar-shift"></td>
-              <td class="calendar-shift not-scheduled">Not scheduled</td>
-              <td class="calendar-shift not-scheduled">Not scheduled</td>
-              <td class="calendar-shift"></td>
-              <td class="calendar-shift not-scheduled">Not scheduled</td>
-              <td class="calendar-shift"></td>
-              <td class="calendar-shift not-scheduled">Not scheduled</td>
-            </tr>
-          
+            <td class="calendar-date">Apr 21</td>
+            <td class="calendar-date">Apr 22</td>
+            <td class="calendar-date">Apr 23</td>
+            <td class="calendar-date">Apr 24</td>
+            <td class="calendar-date">Apr 25</td>
+            <td class="calendar-date">Apr 26</td>
+            <td class="calendar-date">Apr 27</td>
+          </tr>
+          <tr>
+            <td class="calendar-shift">8:00 am<br>to<br>12:00 pm</td>
+            <td class="calendar-shift not-scheduled">Not scheduled</td>
+            <td class="calendar-shift not-scheduled">Not scheduled</td>
+            <td class="calendar-shift">8:00 am<br>to<br>4:00 pm</td>
+            <td class="calendar-shift not-scheduled">Not scheduled</td>
+            <td class="calendar-shift">12:00 pm<br>to<br>4:00 pm</td>
+            <td class="calendar-shift not-scheduled">Not scheduled</td>
+          </tr>
+          <tr>
+            <td class="calendar-footer-link blank">&nbsp;</td>
+            <td class="calendar-footer-link blank">&nbsp;</td>
+            <td class="calendar-footer-link blank">&nbsp;</td>
+            <td class="calendar-footer-link"><a data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Request Off</a></td>
+            <td class="calendar-footer-link blank">&nbsp;</td>
+            <td class="calendar-footer-link blank">&nbsp;</td>
+            <td class="calendar-footer-link blank">&nbsp;</td>
+          </tr>
+        
         </table>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New message to supervisor</h5>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text">I am requesting off for the following dates:</textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-modal-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-modal-primary" data-dismiss="modal">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
       </div>
 

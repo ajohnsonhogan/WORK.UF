@@ -295,7 +295,7 @@ p {
     border-bottom: 1px solid #f2f2f2;
   }
 
-.btn {
+.btn-primary {
     border-radius: 0px;
     background: #285797;
     box-shadow: 2px 2px 4px #555555;
@@ -306,11 +306,47 @@ p {
     border:none;
 }
 
-.btn:hover {
+.btn-primary:hover {
     background: #285797;
     border: none;
     box-shadow: 2px 2px 4px #333333;
 }
+
+.btn-secondary {
+    border-radius: 0px;
+    background: #dddddd;
+    box-shadow: 2px 2px 4px #555555;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight:300;
+    padding: 8px 15px;
+    border:none;
+}
+
+.btn-primary:hover {
+    background: #285797;
+    border: none;
+    box-shadow: 2px 2px 4px #333333;
+}
+
+.btn-modal-primary {
+    background: #285797;
+    color: #eeeeee;
+}
+
+.btn-modal-primary:hover {
+    background: #3968a8;
+    color: #eeeeee;
+}
+
+.btn-modal-secondary {
+    background: #dedede;
+}
+
+.btn-modal-secondary:hover {
+    background: #eeeeee;
+}
+
 
 .clock {
     position: absolute;
@@ -332,11 +368,10 @@ p {
     width: 100%
 }
 
-<<<<<<< HEAD
 .calendar {
     width: 1120px;
     background: white;
-    margin: 100px auto 0;
+    margin: 50px auto 0;
     box-shadow: 2px 2px 4px #888888;
 }
 
@@ -381,8 +416,8 @@ p {
     width: 160px;
     float:left;
     font-size: 20px;
-    /* font-weight: 300;
-    color: #222222; */
+    font-weight: 400;
+    color: #333333;
     text-align: center;
     padding-top: 50px;
     padding: auto;
@@ -397,7 +432,25 @@ p {
     color: #888888;
     padding-top: 70px;
 }
-=======
+
+.calendar .calendar-footer-link {
+    /* height: 200px; */
+    width: 160px;
+    float:left;
+    padding: 25px 0;
+    line-height: 100%;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calendar .blank {
+    text-decoration: none;
+}
+
 .training-card {
   width: 700px;
   height: 250px;
@@ -430,4 +483,3 @@ p {
   align-items: center;
   justify-content: space-around;
 }
->>>>>>> dd47c7ebd687d033e1a961f24cc6b04fabf16570
