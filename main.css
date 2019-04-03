@@ -168,6 +168,10 @@ p {
     box-shadow: 2px 2px 4px #333333;
 }
 
+.clock {
+    position: absolute; 
+}
+
 .column {
     float: left;
     width: 50%;
