@@ -152,7 +152,6 @@ p {
     background: #e0812d;
 }
 
-<<<<<<< HEAD
 .paycheck-card {
     height: 500px;
     width: 900px;
@@ -270,25 +269,25 @@ p {
   .table100.ver1 tr {
     border-bottom: 1px solid #f2f2f2;
   }
-=======
 .btn {
     border-radius: 0px;
     background: #285797;
     box-shadow: 2px 2px 4px #555555;
     text-transform: uppercase;
     font-size: 20px;
+    font-weight:300;
     padding: 8px 15px;
     border:none;
 }
 
 .btn:hover {
-    background: #c1c5cc;
+    background: #285797;
     border: none;
     box-shadow: 2px 2px 4px #333333;
 }
 
 .clock {
-    position: absolute; 
+    position: absolute;
 }
 
 .column {
@@ -306,4 +305,3 @@ p {
     bottom: 25px;
     width: 100%
 }
->>>>>>> fc2963019d69672df03def988d8dc2e447864c48

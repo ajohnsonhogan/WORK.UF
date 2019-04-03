@@ -94,18 +94,51 @@
               <div class="card-orange-line"></div>
 
 
-              <div class="row" style="">
+              <div class="row">
                   <div class="column" >
                     <div style="margin:40px 0px 0px 50px">
                       <h3>Next shift:</h3>
-                      <p>Friday, April 19</p>
-                      <p>10:00 AM - 4:00 PM</p>
+                      <p>Friday, April 19<br>10:00 AM - 4:00 PM</p>
                     </div>
                   </div>
                   <div class="column" style="margin:0 auto">
-                      <p style="text-align: center;margin-top:64px"><button class="btn btn-primary clock">Clock In<i class="far fa-clock" style="margin-left:5px"></i></button></p>
-                      <p style="text-align: center;margin-top:64px"><button class="btn btn-primary clock">Clock Out<i class="far fa-clock" style="margin-left:5px"></i></button></p>
+                      <p style="text-align: center;margin-top:64px;" id="clock-in" onclick="clockInOut()"><button class="btn btn-primary">Clock In<i class="far fa-clock" style="margin-left:5px"></i></button></p>
+                      <p style="text-align: center;margin-top:64px;display:none" id="clock-out" onclick="clockInOut()"><button class="btn btn-primary">Clock Out<i class="far fa-clock" style="margin-left:5px"></i></button></p>
+                      <p id="clocked-in-at"; style="display:none;text-align:center;color:#777777;font-weight:400;font-size:20px"></p>
                   </div>
+
+                  <script>
+                    var clockedIn=false;
+                    var timeIn;
+                    function clockInOut() {
+                      if (clockedIn) {
+                        document.getElementById("clock-in").style.display = "block";
+                        document.getElementById("clock-out").style.display = "none";
+                        document.getElementById("clocked-in-at").style.display = "none";
+                      }
+                      else {
+                        document.getElementById("clock-in").style.display = "none";
+                        document.getElementById("clock-out").style.display = "block";
+                        document.getElementById("clocked-in-at").style.display = "block";
+                        timeIn = new Date();
+                        var hour = timeIn.getHours();
+                        var ampm = "AM";
+                        if (hour > 12) {
+                          hour -= 12;
+                          ampm = "PM";
+                        }
+                        else if (hour == 0) {
+                          hour = 12;
+                        }
+
+                        document.getElementById("clocked-in-at").innerHTML="Clocked in at " + hour + ":" + timeIn.getMinutes() + " " + ampm;
+                      }
+                      clockedIn = !clockedIn;
+                    }
+
+                  </script>
+
+
                 </div>
 
                 <a href="schedule.html" class="card-footer-link">View Calendar</a></a>
