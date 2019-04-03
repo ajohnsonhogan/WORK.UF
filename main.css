@@ -483,3 +483,51 @@ p {
   align-items: center;
   justify-content: space-around;
 }
+.container{
+  margin-top: 50px;
+
+}
+.text-align-center{
+  text-align:center;
+}
+.security-card{
+  width: 735px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.security-brief{
+  margin: 20px;
+  padding-top: 25px;
+}
+.btn-sec{
+  background-color: #e0812d;
+  border-radius: 5px;
+}
+
+.sec-input{
+  background-color:black;
+  width: 18px;
+  color:white;
+}
+.flex-form{
+  display:flex;
+  flex-direction: row;
+}
+/* .flex-col-aligned-center{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+} */
+.align-center{
+  margin-left:60px;
+}
+
+.flex-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 150px;
+}
