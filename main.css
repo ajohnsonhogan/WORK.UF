@@ -334,3 +334,33 @@ p {
   height: 250px;
   margin-left: 50px;
 }
+
+.button-row{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.training-flex{
+  display:flex;
+  justify-content: space-around;
+}
+
+.training-left{
+  display: table;
+  position: relative;
+  top: 0;
+  left: inherit;
+  height: 100%;
+  width: 800px;
+}
+.training-right{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn-training{
+  float: left;
+}
