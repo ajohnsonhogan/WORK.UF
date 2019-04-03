@@ -180,10 +180,25 @@ p {
     width: 150px;
     padding-left: 40px;
   }
+
+  .column1-training{
+    width: 100px;
+    padding-left: 30px;
+  }
   
   .tbl-column {
     width: 150px;
     font-family: "Roboto" !important;
+    text-align: center;
+  }
+
+  .tbl-column-training{
+    width: 120px;
+    font-family: "Roboto" !important;
+    text-align: center;
+  }
+  .tbl-heading {
+    padding-left: 30px;
   }
   
   .table100 th {
@@ -209,6 +224,14 @@ p {
     position: absolute;
     z-index: 1000;
     width: 150px;
+    top: 0;
+    left: 0;
+  }
+  .table100-firstcol-training {
+    background-color: #fff;
+    position: absolute;
+    z-index: 1000;
+    width: 120px;
     top: 0;
     left: 0;
   }
@@ -304,4 +327,10 @@ p {
     position: absolute;
     bottom: 25px;
     width: 100%
+}
+
+.training-card {
+  width: 700px;
+  height: 250px;
+  margin-left: 50px;
 }
