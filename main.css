@@ -3,6 +3,16 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
 .navbar-default {
     background: #285797;
     height: 75px;
@@ -74,14 +84,6 @@ body {
     background: #efefef;
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
 .title-bar {
     height: 75px;
     background: white;
@@ -123,7 +125,6 @@ body {
 
 #middle {
     display: table-cell;
-    margin: auto;
     vertical-align: middle;
 }
 
@@ -133,6 +134,7 @@ body {
     width: 500px;
     background: white;
     box-shadow: 2px 2px 4px #888888;
+    position: relative;
 }
 
 .card .card-header {
@@ -150,6 +152,7 @@ body {
     background: #e0812d;
 }
 
+<<<<<<< HEAD
 .paycheck-card {
     height: 500px;
     width: 900px;
@@ -267,3 +270,36 @@ body {
   .table100.ver1 tr {
     border-bottom: 1px solid #f2f2f2;
   }
+=======
+.btn {
+    border-radius: 0px;
+    background: #285797;
+    box-shadow: 2px 2px 4px #555555;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 8px 15px;
+    border:none;
+}
+
+.btn:hover {
+    background: #c1c5cc;
+    border: none;
+    box-shadow: 2px 2px 4px #333333;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.card-footer-link {
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+    width: 100%
+}
+>>>>>>> fc2963019d69672df03def988d8dc2e447864c48
