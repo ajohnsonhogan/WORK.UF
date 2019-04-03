@@ -1,9 +1,6 @@
-@font-face { font-family: "roboto"; src: url('https://fonts.googleapis.com/css?family=Roboto'); ;}
-
-
 body {
     background: #faf8f1 url(images/bg-texture.png);
-    font-family: "roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .navbar-default {
@@ -102,6 +99,7 @@ body {
     margin-top:-75px;
     font-size: 36px;
     font-weight: 300;
+    letter-spacing: .5px;
 }
 
 .title-bar a {
@@ -112,4 +110,42 @@ body {
 
 .title-bar a:hover {
     text-decoration: none;
+}
+
+#outer {
+    display: table;
+    position: relative;
+    top: 0;
+    left: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+#middle {
+    display: table-cell;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.card {
+    margin: 50px auto;
+    height: 350px;
+    width: 500px;
+    background: white;
+    box-shadow: 2px 2px 4px #888888;
+}
+
+.card .card-header {
+    height: 75px;
+    background: #285797;
+    color: white;
+    line-height: 75px;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.card .card-orange-line {
+    height: 3px;
+    background: #e0812d;
 }
