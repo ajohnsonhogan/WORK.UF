@@ -71,7 +71,7 @@ p {
     text-decoration: none;
     font-size: 24px;
     font-weight:400;
-    color: #777777;
+    color: #666666;
     display: block;
     transition: 0.3s;
     line-height: 72px;
@@ -97,6 +97,7 @@ p {
 }
 
 .title-bar .title {
+    color: #222222;
     text-align: center;
     margin-top:-75px;
     font-size: 36px;
@@ -147,7 +148,7 @@ p {
     text-align: center;
 }
 
-.card .card-orange-line {
+.orange-line {
     height: 3px;
     background: #e0812d;
 }
@@ -173,7 +174,7 @@ p {
   
   th, td {
     font-weight: unset;
-    padding-right: 10px;
+    /* padding-right: 10px; */
   }
   
   .column1 {
@@ -293,6 +294,7 @@ p {
   .table100.ver1 tr {
     border-bottom: 1px solid #f2f2f2;
   }
+
 .btn {
     border-radius: 0px;
     background: #285797;
@@ -330,6 +332,70 @@ p {
     width: 100%
 }
 
+.calendar {
+    width: 1120px;
+    background: white;
+    margin: 100px auto 0;
+    box-shadow: 2px 2px 4px #888888;
+}
+
+.calendar th {
+    width: 160px;
+    background: #285797;
+    height: 40px;
+    float:left;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    padding: auto;
+    line-height: 100%;
+}
+
+.calendar .calendar-date {
+    width: 160px;
+    height: 40px;
+    float:left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #666666;
+    text-align: center;
+    padding-top: 10px;
+    padding: auto;
+    line-height: 100%;
+    border-top: .5px solid #cccccc;
+    border-left: .5px solid #cccccc;
+    border-right: .5px solid #cccccc;
+}
+
+.calendar .calendar-date-current {
+    background: #e2ecf8;
+    /* box-shadow: 1px 1px 4px #aaaaaa; */
+}
+
+.calendar .calendar-shift {
+    height: 200px;
+    width: 160px;
+    float:left;
+    font-size: 20px;
+    /* font-weight: 300;
+    color: #222222; */
+    text-align: center;
+    padding-top: 50px;
+    padding: auto;
+    line-height: 100%;
+    border-bottom: .5px solid #cccccc;
+    border-left: .5px solid #cccccc;
+    border-right: .5px solid #cccccc;
+}
+
+.calendar .not-scheduled {
+    font-weight: 400;
+    color: #888888;
+    padding-top: 70px;
+}
 .training-card {
   width: 700px;
   height: 250px;
