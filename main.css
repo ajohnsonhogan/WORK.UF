@@ -152,6 +152,125 @@ p {
     background: #e0812d;
 }
 
+<<<<<<< HEAD
+.paycheck-card {
+    height: 500px;
+    width: 900px;
+    box-shadow: 0px 1px 4px #666666;
+}
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.table100 {
+    background-color: #fff;
+  }
+  
+  table {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  th, td {
+    font-weight: unset;
+    padding-right: 10px;
+  }
+  
+  .column1 {
+    width: 150px;
+    padding-left: 40px;
+  }
+  
+  .column {
+    width: 150px;
+    font-family: "Roboto" !important;
+  }
+  
+  .table100 th {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  
+  .table100 td {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  
+  /*==================================================================
+  [ Fix col ]*/
+  .table100 {
+    width: 100%;
+    position: relative;
+  }
+  
+  .table100-firstcol {
+    background-color: #fff;
+    position: absolute;
+    z-index: 1000;
+    width: 150px;
+    top: 0;
+    left: 0;
+  }
+  
+  .table100-firstcol table {
+    background-color: #fff;
+  }
+  
+  .wrap-table100-nextcols {
+    width: 100%;
+    overflow: auto;
+    padding-left: 150px;
+    padding-bottom: 28px;
+  }
+  
+  .table100-nextcols table{
+    table-layout: fixed;
+  }
+  
+  .shadow-table100-firstcol {
+    box-shadow: 8px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 8px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 8px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 8px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 8px 0px 10px 0px rgba(0, 0, 0, 0.05);
+  }
+  
+  .table100-firstcol table {
+    background-color: transparent;
+  }
+  
+  /*==================================================================
+  [ Ver1 ]*/
+  
+  .table100.ver1 th {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+  
+  .table100.ver1 td {
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  
+  .table100.ver1 .table100-firstcol td {
+    color: #666666;
+  }
+  
+  .table100.ver1 .table100-nextcols td {
+    color: #999999;
+  }
+  
+  
+  .table100.ver1 tr {
+    border-bottom: 1px solid #f2f2f2;
+  }
+=======
 .btn {
     border-radius: 0px;
     background: #285797;
@@ -163,7 +282,7 @@ p {
 }
 
 .btn:hover {
-    background: #285797;
+    background: #c1c5cc;
     border: none;
     box-shadow: 2px 2px 4px #333333;
 }
@@ -187,3 +306,4 @@ p {
     bottom: 25px;
     width: 100%
 }
+>>>>>>> fc2963019d69672df03def988d8dc2e447864c48
